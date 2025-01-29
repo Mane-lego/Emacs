@@ -2,3 +2,4 @@
 auto-save-list/
 *.saves-*
 #*#
+transient/history.el
