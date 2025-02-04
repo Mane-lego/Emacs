@@ -178,19 +178,9 @@
 ;;(use-package evil-magit
 ;;  :after magit)
 
-(setq magit-git-executable "/usr/bin/git")
+(use-package forge)
 
-(setenv "GIT_SSH_COMMAND" "ssh -vvv")
-(setq magit-process-popup-time 0)  ; Show process buffer immediately
-
-(setenv "GIT_SSH_COMMAND" "ssh -i /home/kimane/kimane_github")
-
-
-
-(setenv "SSH_AUTH_SOCK" (getenv "SSH_AUTH_SOCK"))
-(setenv "SSH_AGENT_PID" (getenv "SSH_AGENT_PID"))
-
-
+(setq auth-sources '("~/.authinfo"))
 
 
 
